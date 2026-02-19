@@ -97,15 +97,38 @@ https://localhost:7179/swagger   → API documentation & testing
 ```
 Note: Port 7179 is just an example — your port may be different (check console output).
 
-## Screenshot
-![Post on Swegger](./ss/post.png)
-![Post on Swegger](./ss/post-success.png)
-![GET on Swegger](./ss/get.png)
-![GET by id on Swegger](./ss/get-by-id.png)
-![PUT on Swegger](./ss/put.png)
-![PUT on Swegger](./ss/put-success.png)
-![GET after update on Swegger](./ss/get-after-update.png)
-![DELETE on Swegger](./ss/delete.png)
-![GET after delete on Swegger](./ss/get-after-delete.png)
+## Screenshots
 
-![FRONTEND](/ss/frontend.png)
+### API Testing (Swagger UI)
+
+![POST request in Swagger](./ss/post.png)  
+*POST request in Swagger UI*
+
+![POST success response](./ss/post-success.png)  
+*POST success – student created*
+
+![GET all students](./ss/get.png)  
+*GET all students*
+
+![GET student by ID](./ss/get-by-id.png)  
+*GET single student by ID*
+
+![PUT update student](./ss/put.png)  
+*PUT request to update student*
+
+![PUT success](./ss/put-success.png)  
+*PUT success response*
+
+![GET after update](./ss/get-after-update.png)  
+*Updated list after PUT*
+
+![DELETE student](./ss/delete.png)  
+*DELETE request*
+
+![GET after delete](./ss/get-after-delete.png)  
+*list after DELETE*
+
+### Frontend Interface
+
+![Student Management frontend](./ss/frontend.png)  
+*Responsive frontend table view with real-time fetch*
