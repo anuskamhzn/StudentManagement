@@ -27,7 +27,8 @@ Both frontend and backend are hosted from the same .NET project.
 | API Testing | Swagger UI (built-in)               |
 | HTTP Client | Fetch API (browser native)          |
 
-## Project Structure (typical)
+## Project Structure
+```text
 StudentManagement/
 ├── Controllers/
 │   └── StudentsController.cs
@@ -42,7 +43,7 @@ StudentManagement/
 ├── appsettings.json
 ├── Program.cs
 └── ...
-
+```
 
 ## API Endpoints
 
@@ -68,43 +69,43 @@ StudentManagement/
 ```bash
 git clone https://github.com/anuskamhzn/StudentManagement.git
 cd student-management
+```
 
 2. **Update connection string (if needed)**
 
 Open appsettings.json or appsettings.Development.json and adjust:
-``bash
+```bash
 JSON"ConnectionStrings": {
   "DefaultConnection": "Server=localhost;Database=StudentDb;Trusted_Connection=True;TrustServerCertificate=True;" 
   }
-``
+```
 
 3. **Create & migrate database**
 
-``bash
+```bash
 dotnet ef migrations add InitialCreate
 dotnet ef database update
-``
+```
 
 4. **Run the application**
 
 5. **Open browser at:**
 
-``bash
+```bash
 https://localhost:7179           → Frontend (index.html)
 https://localhost:7179/swagger   → API documentation & testing
-``
-
+```
 Note: Port 7179 is just an example — your port may be different (check console output).
 
 ## Screenshot
-![Post on Swegger](/ss/post.png)
-![Post on Swegger](/ss/post-success.png)
-![GET on Swegger](/ss/get.png)
-![GET by id on Swegger](/ss/get-by-id.png)
-![PUT on Swegger](/ss/put.png)
-![PUT on Swegger](/ss/put-success.png)
-![GET after update on Swegger](/ss/get-after-update.png)
-![DELETE on Swegger](/ss/delete.png)
-![GET after delete on Swegger](/ss/get-after-delete.png)
+![Post on Swegger](./ss/post.png)
+![Post on Swegger](./ss/post-success.png)
+![GET on Swegger](./ss/get.png)
+![GET by id on Swegger](./ss/get-by-id.png)
+![PUT on Swegger](./ss/put.png)
+![PUT on Swegger](./ss/put-success.png)
+![GET after update on Swegger](./ss/get-after-update.png)
+![DELETE on Swegger](./ss/delete.png)
+![GET after delete on Swegger](./ss/get-after-delete.png)
 
 ![FRONTEND](/ss/frontend.png)
