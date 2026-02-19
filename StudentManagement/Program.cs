@@ -23,6 +23,8 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
-app.UseStaticFiles(); // Serve HTML, JS, CSS from wwwroot
+// Serve frontend
+app.UseDefaultFiles();  // <-- automatically serve index.html
+app.UseStaticFiles();   // <-- serve CSS/JS
 
 app.Run();

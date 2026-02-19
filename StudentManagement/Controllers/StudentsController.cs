@@ -2,8 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using StudentManagement.Data;
 using StudentManagement.Models;
-using StudentManagement.Data;
-using StudentManagement.Models;
 
 namespace StudentManagement.Controllers
 {
